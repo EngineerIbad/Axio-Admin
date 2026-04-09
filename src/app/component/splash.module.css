@@ -1,0 +1,33 @@
+.splash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: black;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+
+.HeadersName {
+  font-size: 3rem;
+  font-weight: 700;
+  display: inline-block;
+  overflow: hidden;
+  color: white;
+}
+
+.HeadersName span {
+  opacity: 0;
+  transform: translateY(20px);
+  display: inline-block;
+  animation: fadeUp 0.6s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

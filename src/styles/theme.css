@@ -1,0 +1,38 @@
+
+/* Light mode variables */
+:root {
+  /* Colors */
+  --Color-Primary: #1b7ef1;
+  --Static-White: #fff;
+  --color-secondary: #9333ea;
+  --color-accent: #f59e0b;
+  --color-bg: #ffffff;
+  --color-text: #111827;
+}
+
+
+
+/* Dark mode variables */
+.dark {
+  --color-primary: #0071f5;
+  --color-bg: #111827;
+  --color-text: #f9fafb;
+}
+
+@layer utilities {
+  .bg-primary {
+    background-color: var(--Color-Primary);
+  }
+
+  .bg-static-White {
+    background-color: var(--Static-White);
+  }
+
+  .text-primary {
+    color: var(--color-primary);
+  }
+
+  .font-sans-custom {
+    font-family: var(--font-sans);
+  }
+}
